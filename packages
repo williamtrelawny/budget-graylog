@@ -1,0 +1,22 @@
+# apt-transport-https
+# curl
+# elasticsearch-oss
+# ethtool
+# graylog-3.3-repository
+# graylog-server
+# jo
+# jq
+# libguice-java
+# libguice-java-doc
+# libjersey1-guice-java
+# mongodb-org
+# net-tools
+# open-vm-tools
+# syslog-ng-core
+# tcpdump
+# vim
+
+wget -qO - http://download.opensuse.org/repositories/home:/laszlo_budai:/syslog-ng/Debian_10/Release.key | sudo apt-key add -
+deb http://download.opensuse.org/repositories/home:/laszlo_budai:/syslog-ng/Debian_10 ./
+apt-get update
+apt-get install syslog-ng-core
